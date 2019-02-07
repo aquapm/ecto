@@ -1,0 +1,27 @@
+{
+	"name": "ecto",
+	"short_desc": "Template for Ecto domain layer appliction",
+	"version": 1,
+	"options": [],
+	"files": {
+		"base": [
+			"config/config.exs",
+			"config/prod.secret.exs",
+			".formatter.exs",
+			".gitignore",
+			"mix.exs",
+			"README.md",
+			"lib/<%= @project_name %>/application.ex",
+			"lib/<%= @project_name %>/application.ex",
+			"priv/repo/migrations/.formatter.exs",
+			"priv/repo/seeds.exs"
+		],
+		"test": [
+			"config/test.exs",
+			"config/dev.exs",
+			"config/prod.exs",
+			"test/test_helper.exs",
+			"test/support/data_case.ex"
+		]
+	}
+}
