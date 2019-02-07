@@ -6,7 +6,8 @@ defmodule <%= @project_name_camel_case %>.Application do
   use Application
 
   def start(_type, _args) do
-    Supervisor.start_link([
+    Supervisor.start_link(
+      [
         <%= @project_name_camel_case %>.Repo
       ],
       strategy: :one_for_one,

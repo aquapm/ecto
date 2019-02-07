@@ -8,11 +8,10 @@
 			"config/config.exs",
 			"config/prod.secret.exs",
 			".formatter.exs",
-			".gitignore",
 			"mix.exs",
 			"README.md",
 			"lib/<%= @project_name %>/application.ex",
-			"lib/<%= @project_name %>/application.ex",
+			"lib/<%= @project_name %>/repo.ex",
 			"priv/repo/migrations/.formatter.exs",
 			"priv/repo/seeds.exs"
 		],
@@ -22,6 +21,9 @@
 			"config/prod.exs",
 			"test/test_helper.exs",
 			"test/support/data_case.ex"
+		],
+		"in_standalone?": [
+			".gitignore<% :evaluate_gitignore %>"
 		]
 	}
 }
